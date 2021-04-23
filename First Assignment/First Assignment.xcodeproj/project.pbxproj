@@ -15,7 +15,12 @@
 		24129F3B261B78E3004502F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24129F39261B78E3004502F1 /* LaunchScreen.storyboard */; };
 		24129F44261B7DC7004502F1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24129F43261B7DC7004502F1 /* StartViewController.swift */; };
 		24129F47261B8109004502F1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24129F46261B8109004502F1 /* SignUpViewController.swift */; };
-		24129F4A261B824E004502F1 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24129F49261B824E004502F1 /* ConfirmViewController.swift */; };
+		24737E382632989500990DB8 /* Friend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24737E372632989500990DB8 /* Friend.storyboard */; };
+		24737E3B2632994F00990DB8 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E3A2632994F00990DB8 /* FriendViewController.swift */; };
+		24737E3E26329B5800990DB8 /* KakaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E3D26329B5800990DB8 /* KakaoTabBarController.swift */; };
+		24737E432632A06600990DB8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24737E422632A06600990DB8 /* Profile.storyboard */; };
+		24737E462632A33400990DB8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E452632A33400990DB8 /* ProfileViewController.swift */; };
+		24737E492632ABB600990DB8 /* ProfileModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +34,12 @@
 		24129F3C261B78E3004502F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24129F43261B7DC7004502F1 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		24129F46261B8109004502F1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		24129F49261B824E004502F1 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		24737E372632989500990DB8 /* Friend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friend.storyboard; sourceTree = "<group>"; };
+		24737E3A2632994F00990DB8 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		24737E3D26329B5800990DB8 /* KakaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabBarController.swift; sourceTree = "<group>"; };
+		24737E422632A06600990DB8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		24737E452632A33400990DB8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,12 @@
 				24129F3C261B78E3004502F1 /* Info.plist */,
 				24129F43261B7DC7004502F1 /* StartViewController.swift */,
 				24129F46261B8109004502F1 /* SignUpViewController.swift */,
-				24129F49261B824E004502F1 /* ConfirmViewController.swift */,
+				24737E372632989500990DB8 /* Friend.storyboard */,
+				24737E3A2632994F00990DB8 /* FriendViewController.swift */,
+				24737E3D26329B5800990DB8 /* KakaoTabBarController.swift */,
+				24737E422632A06600990DB8 /* Profile.storyboard */,
+				24737E452632A33400990DB8 /* ProfileViewController.swift */,
+				24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */,
 			);
 			path = "First Assignment";
 			sourceTree = "<group>";
@@ -133,7 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24737E382632989500990DB8 /* Friend.storyboard in Resources */,
 				24129F3B261B78E3004502F1 /* LaunchScreen.storyboard in Resources */,
+				24737E432632A06600990DB8 /* Profile.storyboard in Resources */,
 				24129F38261B78E3004502F1 /* Assets.xcassets in Resources */,
 				24129F36261B78E3004502F1 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +166,12 @@
 				24129F33261B78E3004502F1 /* ViewController.swift in Sources */,
 				24129F44261B7DC7004502F1 /* StartViewController.swift in Sources */,
 				24129F2F261B78E3004502F1 /* AppDelegate.swift in Sources */,
-				24129F4A261B824E004502F1 /* ConfirmViewController.swift in Sources */,
+				24737E3B2632994F00990DB8 /* FriendViewController.swift in Sources */,
+				24737E3E26329B5800990DB8 /* KakaoTabBarController.swift in Sources */,
 				24129F31261B78E3004502F1 /* SceneDelegate.swift in Sources */,
+				24737E462632A33400990DB8 /* ProfileViewController.swift in Sources */,
 				24129F47261B8109004502F1 /* SignUpViewController.swift in Sources */,
+				24737E492632ABB600990DB8 /* ProfileModalPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,12 +19,12 @@ class StartViewController: UIViewController {
 
     @IBAction func touchLogin(_ sender: Any) {
         if checkTextField() {
-            guard let vc = storyboard?.instantiateViewController(identifier: "ConfirmViewController") as? ConfirmViewController, let id = idTextField.text else {
+            let storyboard = UIStoryboard(name: "Friend", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(identifier: "FriendViewController") as? FriendViewController, let id = idTextField.text else {
                 return
             }
-            vc.name = id
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
+//            vc.name = id
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }

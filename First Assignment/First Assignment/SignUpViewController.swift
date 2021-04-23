@@ -18,14 +18,13 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func touchCreateButton(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ConfirmViewController") as? ConfirmViewController, let id = idTextField.text else {
+        let storyboard = UIStoryboard(name: "Friend", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "FriendViewController") as? FriendViewController, let id = idTextField.text else {
             return
         }
-        vc.name = id
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true) {
-            self.navigationController?.popViewController(animated: true)
-        }
+//        vc.name = id
+//        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     private func checkTextField() -> Bool {

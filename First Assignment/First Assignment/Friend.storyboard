@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friend View Controller-->
+        <scene sceneID="LIx-8d-6xh">
+            <objects>
+                <viewController storyboardIdentifier="FriendViewController" id="69Q-Qz-hbI" customClass="FriendViewController" customModule="First_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hvi-rM-zjD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZY-EL-b7z">
+                                <rect key="frame" x="14" y="59" width="39" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="CbQ-8Z-Bsx">
+                                <rect key="frame" x="14" y="104" width="59" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="klK-l9-dnl"/>
+                                    <constraint firstAttribute="width" constant="59" id="v61-Re-rGH"/>
+                                </constraints>
+                            </imageView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbd-t6-9Nw">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="" image="friendTabIcon" selectedImage="friendTabIconSelected" id="Zdn-0j-0kJ"/>
+                                    <tabBarItem title="" image="messageTabIcon" selectedImage="messageTabIconSelected" id="X0j-Og-OFU"/>
+                                    <tabBarItem title="" image="searchTabIcon" selectedImage="searchTabIconSelected" id="B5a-rp-vrs"/>
+                                    <tabBarItem title="" image="shopTabIcon" selectedImage="shopTabIconSelected" id="kHA-mY-iBY"/>
+                                    <tabBarItem title="" image="detailTabIcon" selectedImage="detailTabIconSelected" id="Z9J-iL-rEj"/>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zUp-yN-4Dp"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CbQ-8Z-Bsx" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="14" id="2ut-et-hdf"/>
+                            <constraint firstItem="CbQ-8Z-Bsx" firstAttribute="top" secondItem="TZY-EL-b7z" secondAttribute="bottom" constant="18" id="BqP-mn-tau"/>
+                            <constraint firstItem="TZY-EL-b7z" firstAttribute="top" secondItem="zUp-yN-4Dp" secondAttribute="top" constant="15" id="K3b-Gi-soI"/>
+                            <constraint firstItem="TZY-EL-b7z" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="14" id="Lkh-nc-RZV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuTabBar" destination="nbd-t6-9Nw" id="xCJ-2b-pBC"/>
+                        <outlet property="profileImageView" destination="CbQ-8Z-Bsx" id="8Rn-ae-Fyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUY-5N-2KC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IZY-Oh-Xkn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avi-ij-1YM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="YIB-uC-Bmi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z2d-5y-eSj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1138" y="225"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="detailTabIcon" width="21" height="5"/>
+        <image name="detailTabIconSelected" width="21" height="5"/>
+        <image name="friendTabIcon" width="18" height="20"/>
+        <image name="friendTabIconSelected" width="18" height="20"/>
+        <image name="friendtabProfileImg" width="59" height="58"/>
+        <image name="messageTabIcon" width="20.5" height="19.5"/>
+        <image name="messageTabIconSelected" width="20.5" height="19.5"/>
+        <image name="searchTabIcon" width="15" height="17.5"/>
+        <image name="searchTabIconSelected" width="15" height="17.5"/>
+        <image name="shopTabIcon" width="19.5" height="19"/>
+        <image name="shopTabIconSelected" width="19.5" height="19"/>
+    </resources>
+</document>
