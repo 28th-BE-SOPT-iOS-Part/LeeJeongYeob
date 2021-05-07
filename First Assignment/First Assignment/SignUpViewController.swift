@@ -18,8 +18,8 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func touchCreateButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Friend", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: "FriendViewController") as? FriendViewController, let id = idTextField.text else {
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "KakaoTabBarController") as? KakaoTabBarController, let id = idTextField.text else {
             return
         }
 //        vc.name = id

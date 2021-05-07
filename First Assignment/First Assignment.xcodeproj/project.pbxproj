@@ -21,6 +21,18 @@
 		24737E432632A06600990DB8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24737E422632A06600990DB8 /* Profile.storyboard */; };
 		24737E462632A33400990DB8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E452632A33400990DB8 /* ProfileViewController.swift */; };
 		24737E492632ABB600990DB8 /* ProfileModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */; };
+		24848F8C2645328600B55159 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24848F8B2645328600B55159 /* Chat.storyboard */; };
+		24848F8F2645328C00B55159 /* Hash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24848F8E2645328C00B55159 /* Hash.storyboard */; };
+		24848F922645329500B55159 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24848F912645329500B55159 /* Shopping.storyboard */; };
+		24848F95264532A000B55159 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24848F94264532A000B55159 /* More.storyboard */; };
+		24848F98264532BF00B55159 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24848F97264532BF00B55159 /* TabBar.storyboard */; };
+		24848F9B264535AF00B55159 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848F9A264535AF00B55159 /* ChatViewController.swift */; };
+		24848F9E264535B900B55159 /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848F9D264535B900B55159 /* HashViewController.swift */; };
+		24848FA1264535C300B55159 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FA0264535C300B55159 /* ShoppingViewController.swift */; };
+		24848FA4264535CB00B55159 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FA3264535CB00B55159 /* MoreViewController.swift */; };
+		24848FAA2645397800B55159 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FA82645397800B55159 /* FriendTableViewCell.swift */; };
+		24848FAB2645397800B55159 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24848FA92645397800B55159 /* FriendTableViewCell.xib */; };
+		24848FAE26453E6000B55159 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FAD26453E6000B55159 /* FriendDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +52,18 @@
 		24737E422632A06600990DB8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		24737E452632A33400990DB8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalPresentationController.swift; sourceTree = "<group>"; };
+		24848F8B2645328600B55159 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		24848F8E2645328C00B55159 /* Hash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hash.storyboard; sourceTree = "<group>"; };
+		24848F912645329500B55159 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		24848F94264532A000B55159 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		24848F97264532BF00B55159 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		24848F9A264535AF00B55159 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		24848F9D264535B900B55159 /* HashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashViewController.swift; sourceTree = "<group>"; };
+		24848FA0264535C300B55159 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		24848FA3264535CB00B55159 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		24848FA82645397800B55159 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		24848FA92645397800B55159 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		24848FAD26453E6000B55159 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +111,18 @@
 				24737E422632A06600990DB8 /* Profile.storyboard */,
 				24737E452632A33400990DB8 /* ProfileViewController.swift */,
 				24737E482632ABB600990DB8 /* ProfileModalPresentationController.swift */,
+				24848F8B2645328600B55159 /* Chat.storyboard */,
+				24848F8E2645328C00B55159 /* Hash.storyboard */,
+				24848F912645329500B55159 /* Shopping.storyboard */,
+				24848F94264532A000B55159 /* More.storyboard */,
+				24848F97264532BF00B55159 /* TabBar.storyboard */,
+				24848F9A264535AF00B55159 /* ChatViewController.swift */,
+				24848F9D264535B900B55159 /* HashViewController.swift */,
+				24848FA0264535C300B55159 /* ShoppingViewController.swift */,
+				24848FA3264535CB00B55159 /* MoreViewController.swift */,
+				24848FA82645397800B55159 /* FriendTableViewCell.swift */,
+				24848FA92645397800B55159 /* FriendTableViewCell.xib */,
+				24848FAD26453E6000B55159 /* FriendDataModel.swift */,
 			);
 			path = "First Assignment";
 			sourceTree = "<group>";
@@ -148,11 +184,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24848F98264532BF00B55159 /* TabBar.storyboard in Resources */,
+				24848F8F2645328C00B55159 /* Hash.storyboard in Resources */,
+				24848F8C2645328600B55159 /* Chat.storyboard in Resources */,
+				24848F922645329500B55159 /* Shopping.storyboard in Resources */,
 				24737E382632989500990DB8 /* Friend.storyboard in Resources */,
 				24129F3B261B78E3004502F1 /* LaunchScreen.storyboard in Resources */,
+				24848F95264532A000B55159 /* More.storyboard in Resources */,
 				24737E432632A06600990DB8 /* Profile.storyboard in Resources */,
 				24129F38261B78E3004502F1 /* Assets.xcassets in Resources */,
 				24129F36261B78E3004502F1 /* Main.storyboard in Resources */,
+				24848FAB2645397800B55159 /* FriendTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +208,18 @@
 				24129F33261B78E3004502F1 /* ViewController.swift in Sources */,
 				24129F44261B7DC7004502F1 /* StartViewController.swift in Sources */,
 				24129F2F261B78E3004502F1 /* AppDelegate.swift in Sources */,
+				24848FA4264535CB00B55159 /* MoreViewController.swift in Sources */,
 				24737E3B2632994F00990DB8 /* FriendViewController.swift in Sources */,
 				24737E3E26329B5800990DB8 /* KakaoTabBarController.swift in Sources */,
+				24848F9E264535B900B55159 /* HashViewController.swift in Sources */,
+				24848FAE26453E6000B55159 /* FriendDataModel.swift in Sources */,
 				24129F31261B78E3004502F1 /* SceneDelegate.swift in Sources */,
 				24737E462632A33400990DB8 /* ProfileViewController.swift in Sources */,
 				24129F47261B8109004502F1 /* SignUpViewController.swift in Sources */,
+				24848F9B264535AF00B55159 /* ChatViewController.swift in Sources */,
+				24848FA1264535C300B55159 /* ShoppingViewController.swift in Sources */,
 				24737E492632ABB600990DB8 /* ProfileModalPresentationController.swift in Sources */,
+				24848FAA2645397800B55159 /* FriendTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
