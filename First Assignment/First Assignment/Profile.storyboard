@@ -121,6 +121,8 @@
                     <connections>
                         <outlet property="chattingStackView" destination="t8b-Os-xEv" id="8AK-Gu-RS9"/>
                         <outlet property="edittingStackView" destination="EuL-5e-yyC" id="d7v-Bi-kzo"/>
+                        <outlet property="profileImageView" destination="eSL-87-cKU" id="rhj-RR-2FY"/>
+                        <outlet property="profileLabel" destination="40g-IZ-TKv" id="x5e-Go-dxu"/>
                         <outlet property="storyStackView" destination="cUR-ZR-mBg" id="cSq-9r-0II"/>
                     </connections>
                 </viewController>

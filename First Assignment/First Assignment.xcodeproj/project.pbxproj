@@ -33,6 +33,8 @@
 		24848FAA2645397800B55159 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FA82645397800B55159 /* FriendTableViewCell.swift */; };
 		24848FAB2645397800B55159 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24848FA92645397800B55159 /* FriendTableViewCell.xib */; };
 		24848FAE26453E6000B55159 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FAD26453E6000B55159 /* FriendDataModel.swift */; };
+		24848FB2264541D400B55159 /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24848FB0264541D400B55159 /* IconCollectionViewCell.swift */; };
+		24848FB3264541D400B55159 /* IconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24848FB1264541D400B55159 /* IconCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		24848FA82645397800B55159 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		24848FA92645397800B55159 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		24848FAD26453E6000B55159 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
+		24848FB0264541D400B55159 /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		24848FB1264541D400B55159 /* IconCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				24848FA82645397800B55159 /* FriendTableViewCell.swift */,
 				24848FA92645397800B55159 /* FriendTableViewCell.xib */,
 				24848FAD26453E6000B55159 /* FriendDataModel.swift */,
+				24848FB0264541D400B55159 /* IconCollectionViewCell.swift */,
+				24848FB1264541D400B55159 /* IconCollectionViewCell.xib */,
 			);
 			path = "First Assignment";
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 				24848F98264532BF00B55159 /* TabBar.storyboard in Resources */,
 				24848F8F2645328C00B55159 /* Hash.storyboard in Resources */,
 				24848F8C2645328600B55159 /* Chat.storyboard in Resources */,
+				24848FB3264541D400B55159 /* IconCollectionViewCell.xib in Resources */,
 				24848F922645329500B55159 /* Shopping.storyboard in Resources */,
 				24737E382632989500990DB8 /* Friend.storyboard in Resources */,
 				24129F3B261B78E3004502F1 /* LaunchScreen.storyboard in Resources */,
@@ -212,6 +219,7 @@
 				24737E3B2632994F00990DB8 /* FriendViewController.swift in Sources */,
 				24737E3E26329B5800990DB8 /* KakaoTabBarController.swift in Sources */,
 				24848F9E264535B900B55159 /* HashViewController.swift in Sources */,
+				24848FB2264541D400B55159 /* IconCollectionViewCell.swift in Sources */,
 				24848FAE26453E6000B55159 /* FriendDataModel.swift in Sources */,
 				24129F31261B78E3004502F1 /* SceneDelegate.swift in Sources */,
 				24737E462632A33400990DB8 /* ProfileViewController.swift in Sources */,

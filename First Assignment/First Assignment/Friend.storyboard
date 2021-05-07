@@ -56,10 +56,17 @@
                                 <rect key="frame" x="16" y="171" width="382" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ie-O5-QA7">
+                                <rect key="frame" x="380" y="59" width="19" height="26.5"/>
+                                <state key="normal" image="settingIcon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zUp-yN-4Dp"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zUp-yN-4Dp" firstAttribute="trailing" secondItem="1ie-O5-QA7" secondAttribute="trailing" constant="15" id="21q-dR-KOu"/>
                             <constraint firstItem="CbQ-8Z-Bsx" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="14" id="2ut-et-hdf"/>
                             <constraint firstItem="CbQ-8Z-Bsx" firstAttribute="top" secondItem="TZY-EL-b7z" secondAttribute="bottom" constant="18" id="BqP-mn-tau"/>
                             <constraint firstItem="6Fx-Ij-tie" firstAttribute="top" secondItem="iXX-2y-dG8" secondAttribute="bottom" id="CAP-FS-jyi"/>
@@ -67,9 +74,11 @@
                             <constraint firstItem="iXX-2y-dG8" firstAttribute="top" secondItem="CbQ-8Z-Bsx" secondAttribute="bottom" constant="8.5" id="DZu-tY-7Vg"/>
                             <constraint firstItem="TZY-EL-b7z" firstAttribute="top" secondItem="zUp-yN-4Dp" secondAttribute="top" constant="15" id="K3b-Gi-soI"/>
                             <constraint firstItem="TZY-EL-b7z" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="14" id="Lkh-nc-RZV"/>
+                            <constraint firstItem="1ie-O5-QA7" firstAttribute="bottom" secondItem="TZY-EL-b7z" secondAttribute="bottom" id="Mb6-cm-0qw"/>
                             <constraint firstItem="zUp-yN-4Dp" firstAttribute="bottom" secondItem="6Fx-Ij-tie" secondAttribute="bottom" id="Nf5-oS-Q8N"/>
                             <constraint firstItem="iXX-2y-dG8" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="16" id="TPM-mg-sdg"/>
                             <constraint firstItem="6Fx-Ij-tie" firstAttribute="leading" secondItem="zUp-yN-4Dp" secondAttribute="leading" constant="16" id="Xbt-bI-8ZB"/>
+                            <constraint firstItem="1ie-O5-QA7" firstAttribute="top" secondItem="TZY-EL-b7z" secondAttribute="top" id="dNi-Xl-c2F"/>
                             <constraint firstItem="PZf-vU-QcJ" firstAttribute="leading" secondItem="CbQ-8Z-Bsx" secondAttribute="trailing" constant="10" id="lcD-PF-Wl0"/>
                             <constraint firstItem="PZf-vU-QcJ" firstAttribute="centerY" secondItem="CbQ-8Z-Bsx" secondAttribute="centerY" id="qxs-Tj-iEy"/>
                             <constraint firstItem="zUp-yN-4Dp" firstAttribute="trailing" secondItem="6Fx-Ij-tie" secondAttribute="trailing" constant="16" id="v0C-0e-GxZ"/>
@@ -101,6 +110,7 @@
     </scenes>
     <resources>
         <image name="friendtabProfileImg" width="59" height="58"/>
+        <image name="settingIcon" width="19" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

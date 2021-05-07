@@ -126,4 +126,16 @@ extension FriendViewController: UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         ProfileModalPresentationController(presentedViewController: presented, presenting: presenting)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+        guard let vc = profileStoryboard.instantiateViewController(identifier: "ProfileViewController") as? ProfileViewController else {
+            return
+        }
+        vc.profileImage = friendList[indexPath.row].image
+        vc.name = friendList[indexPath.row].name
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .custom
+        self.present(vc,animated: true,completion: nil)
+    }
 }

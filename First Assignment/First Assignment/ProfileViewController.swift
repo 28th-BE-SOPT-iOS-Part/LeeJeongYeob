@@ -9,14 +9,22 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileLabel: UILabel!
+    
     @IBOutlet weak var chattingStackView: UIStackView!
     @IBOutlet weak var edittingStackView: UIStackView!
     @IBOutlet weak var storyStackView: UIStackView!
+    
+    var profileImage = UIImage()
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeTapGesture()
         initializePanGesture()
+        self.profileImageView.image = self.profileImage
+        self.profileLabel.text = name
         // Do any additional setup after loading the view.
     }
     
