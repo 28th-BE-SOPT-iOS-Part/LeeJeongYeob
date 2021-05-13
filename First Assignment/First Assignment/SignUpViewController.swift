@@ -18,13 +18,31 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func touchCreateButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: "KakaoTabBarController") as? KakaoTabBarController, let id = idTextField.text else {
-            return
+        if checkTextField() {
+            guard let email = idTextField.text, let password = pwTextField.text else {
+                return
+            }
+        
+            AccountAPI.shared.postSignupData(email, password) { result in
+                switch result {
+                case .success(let message):
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message, okAction: self.pushToTabbarController(_:), completion: nil)
+                    }
+                case .requestErr(let message):
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message, okAction: nil, completion: nil)
+                    }
+                default:
+                    print("Error")
+                }
+                
+            }
+            
+        } else {
+            self.makeAlert(title: "알림", message: "필요한 값이 존재하지 않습니다", okAction: nil, completion: nil)
         }
-//        vc.name = id
-//        vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
+        
         
     }
     private func checkTextField() -> Bool {
@@ -36,5 +54,13 @@ class SignUpViewController: UIViewController {
             return true
         }
         return false
+    }
+    
+    func pushToTabbarController(_ action :UIAlertAction) {
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "KakaoTabBarController") as? KakaoTabBarController else {
+            return
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

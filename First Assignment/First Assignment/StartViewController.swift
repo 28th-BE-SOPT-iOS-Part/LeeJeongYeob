@@ -12,6 +12,7 @@ class StartViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,12 +20,30 @@ class StartViewController: UIViewController {
 
     @IBAction func touchLogin(_ sender: Any) {
         if checkTextField() {
-            let storyboard = UIStoryboard(name: "Friend", bundle: nil)
-            guard let vc = storyboard.instantiateViewController(identifier: "FriendViewController") as? FriendViewController, let id = idTextField.text else {
+            guard let email = idTextField.text, let password = passwordTextField.text else {
                 return
             }
-//            vc.name = id
-            self.navigationController?.pushViewController(vc, animated: true)
+        
+            AccountAPI.shared.postSignInData(email, password) { result in
+                switch result {
+                case .success(let data):
+                    if let data = data as? Signin {
+                        UserDefaults.standard.set(data.token, forKey: "token")
+                        self.makeAlert(title: "알림", message: "로그인 성공 ^o^", okAction: self.pushToTabbarController(_:), completion: nil)
+                    }
+                case .requestErr(let message):
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message, okAction: nil, completion: nil)
+                    }
+                default:
+                    print("Error")
+                }
+                
+            }
+            
+            
+            
+            
         }
         
     }
@@ -44,5 +63,13 @@ class StartViewController: UIViewController {
             return true
         }
         return false
+    }
+    
+    func pushToTabbarController(_ action :UIAlertAction) {
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "KakaoTabBarController") as? KakaoTabBarController else {
+            return
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
